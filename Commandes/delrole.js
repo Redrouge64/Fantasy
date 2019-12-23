@@ -14,6 +14,9 @@ module.exports.run = (client, message, args) => {
             .catch(console.error);
 };
 
-module.exports.help = {
-    name: 'delrole'
-};
+exports.help = {
+    name: "delrole",
+    category: "System",
+    description: "Suppr role",
+    usage: "Roles"
+  };

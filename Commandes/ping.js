@@ -6,6 +6,9 @@ module.exports.run = (client, message, args) => {
         .then((m) => m.edit(`Pong : **${Date.now() - début}**ms`));
 };
 
-module.exports.help = {
-    name: 'ping'
-};
+exports.help = {
+    name: "Ping",
+    category: "System",
+    description: "Savoir son ping",
+    usage: "Roles"
+  };

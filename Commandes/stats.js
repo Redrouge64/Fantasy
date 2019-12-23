@@ -37,6 +37,9 @@ module.exports.run = (client, message, args) => {
     });
 };
 
-module.exports.help = {
-    name: 'stats'
-};
+exports.help = {
+    name: "stats",
+    category: "System",
+    description: "savoir ses stats",
+    usage: "Roles"
+  };

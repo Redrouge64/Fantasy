@@ -30,6 +30,9 @@ module.exports.run = (client, message, args) => {
                 });
 };
 
-module.exports.help = {
-    name: 'kick'
-};
+exports.help = {
+    name: "kick les cons",
+    category: "System",
+    description: "Kick",
+    usage: "Roles"
+  };
