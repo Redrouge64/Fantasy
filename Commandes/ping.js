@@ -1,14 +1,18 @@
-const Discord = require('discord.js');
+exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
+  const msg = await message.channel.send("Ping?");
+  msg.edit(`Pong! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+};
 
-module.exports.run = (client, message, args) => {
-    let début = Date.now();
-    message.channel.send('Ping')
-        .then((m) => m.edit(`Pong : **${Date.now() - début}**ms`));
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: "User"
 };
 
 exports.help = {
-    name: "Ping",
-    category: "System",
-    description: "Savoir son ping",
-    usage: "Roles"
-  };
+  name: "ping",
+  category: "Miscelaneous",
+  description: "It like... Pings. Then Pongs. And it's not Ping Pong.",
+  usage: "ping"
+};
