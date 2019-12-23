@@ -30,9 +30,6 @@ module.exports.run = (client, message, args) => {
                 });
 };
 
-exports.help = {
-    name: "Ban",
-    category: "System",
-    description: "Ban les cons",
-    usage: "Ban"
-  };
+module.exports.help = {
+    name: 'ban'
+};

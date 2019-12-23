@@ -11,9 +11,6 @@ module.exports.run = (client, message, args) => {
             });
 };
 
-exports.help = {
-    name: "Clear",
-    category: "System",
-    description: "Clear les conneries",
-    usage: "Roles"
-  };
+module.exports.help = {
+    name: 'clear'
+};

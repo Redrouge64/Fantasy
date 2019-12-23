@@ -14,9 +14,6 @@ module.exports.run = (client, message, args) => {
             .catch(console.error);
 };
 
-exports.help = {
-    name: "addrole",
-    category: "System",
-    description: "Ajoute des roles",
-    usage: "Roles"
-  };
+module.exports.help = {
+    name: 'addrole'
+};
